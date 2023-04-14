@@ -1,0 +1,41 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  td {
+    font-weight: normal;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #completed-tasks li {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  #pending-tasks li {
+    color: blue;
+  }
+  
+  #cancelled-tasks li {
+    color: red;
+  }
+  
+  #deleted-tasks li {
+    color: #aaa;
+  }
+  
+  

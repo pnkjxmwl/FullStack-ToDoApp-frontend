@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>ADD A TASK</h2>
+    <form >
+		<label for="description">Description:</label>
+		<input type="text" id="description" name="description"><br><br>
+		<label for="priority">Priority:</label>
+		<input type="number" id="priority" name="priority" min="1" max="9" maxlength="1"><br><br>
+		<button type="button" onclick="addTodo()">Add Todo</button>
+	</form>
+
+	<h1>Todo List</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Description</th>
+				<th>Priority</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody id="todo-list">
+			
+		</tbody>
+	</table>
+
+    <h3>TASK REPORT</h3>
+    <table>
+        <thead>
+          <tr>
+            <th>Task Status(Count)</th>
+            <th>Tasks (Priority)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Completed (<span id="completed-count">0</span>)</td>
+            <td id="completed-tasks"></td>
+          </tr>
+          <tr>
+            <td>Pending (<span id="pending-count">0</span>)</td>
+            <td id="pending-tasks"></td>
+          </tr>
+          <tr>
+            <td>Cancelled (<span id="cancelled-count">0</span>)</td>
+            <td id="cancelled-tasks"></td>
+          </tr>
+          <tr>
+            <td>Deleted (<span id="deleted-count">0</span>)</td>
+            <td id="deleted-tasks"></td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+
+	<script src="app.js"></script>
+</body>
+</html>
